@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download Result</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Download Result</h1>
+        {% if file_url %}
+          <p>File is ready for download : <a href="{{ file_url }}" target="_blank">Download</a></p>
+        {% endif %}
+        {% if error %}
+           <p class="error"> {{error}}</p>
+        {% endif %}
+    </div>
+</body>
+</html>

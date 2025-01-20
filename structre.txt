@@ -1,0 +1,13 @@
+youtube-downloader/
+├── app.py            # فایل اصلی برنامه Flask
+├── requirements.txt   # لیست پکیج‌های مورد نیاز
+├── config.py         # تنظیمات دیتابیس و سرویس‌ها
+├── utils/
+│   └── youtube_helper.py  # توابع کمکی برای دانلود و پردازش ویدیو
+├── static/
+│   └── styles.css    # استایل های صفحه وب
+├── templates/
+│   └── index.html     # صفحه اصلی سایت
+│   └── download_result.html #صفحه نمایش نتیجه دانلود
+├── .env               # متغیرهای محیطی (برای توسعه)
+└── Procfile           # فایل مورد نیاز Render برای استقرار

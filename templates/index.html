@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Downloader</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Downloader</h1>
+        <form method="post">
+            <input type="url" name="youtube_url" placeholder="Enter YouTube URL" required><br>
+            <select name="download_type">
+                <option value="video">Download Video</option>
+                <option value="subtitle">Download Subtitle</option>
+            </select>
+            <br>
+            <input type="submit" value="Download">
+        </form>
+      {% if error %}
+        <p class="error">{{ error }}</p>
+       {% endif %}
+    </div>
+</body>
+</html>
